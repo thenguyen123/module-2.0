@@ -19,14 +19,13 @@ public class SumLine {
     }
     public static void main(String[] args) {
         int column, row;
-        float[][] array;
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter column");
         column = Integer.parseInt(scanner.nextLine());
         System.out.println("enter row");
         row = Integer.parseInt(scanner.nextLine());
-        array = new float[column][row];
+        float[][]array = new float[column][row];
         for (int i = 0; i < column; i++) {
             for (int j = 0; j < row; j++) {
                 System.out.println("enter number array " + (1+i )+ (j+1));

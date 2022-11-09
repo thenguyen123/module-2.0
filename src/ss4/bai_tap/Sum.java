@@ -13,7 +13,7 @@ public class Sum {
     }
     public static void main(String[] args) {
         int column,row,index;
-        int[][]array;
+
 
 
 
@@ -22,7 +22,7 @@ public class Sum {
         column=Integer.parseInt(scanner.nextLine());
         System.out.println("enter row");
         row=Integer.parseInt(scanner.nextLine());
-        array=new int[column][row];
+         int[][]array=new int[column][row];
 
         for (int i = 0; i < column; i++) {
             for (int j = 0; j < row; j++) {
