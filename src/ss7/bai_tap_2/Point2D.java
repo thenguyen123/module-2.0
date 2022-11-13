@@ -3,7 +3,7 @@ package ss7.bai_tap_2;
 import java.util.Arrays;
 
 public class Point2D {
-    private float[] arr = new float[2];
+
     private float x = 0.0f;
     private float y = 0.0f;
 
@@ -39,14 +39,13 @@ public class Point2D {
     }
 
     public float[] getXY() {
+       float[]arr={x,y};
 
-        arr[0] = x;
-        arr[1] = y;
-        return this.arr;
+        return arr;
     }
 
     public String toString() {
-        return "point 2D " + Arrays.toString(arr);
+        return "point 2D " + Arrays.toString(getXY());
 
 
     }
