@@ -48,32 +48,41 @@ public class Refactoring {
         return result;
     }
 
-    public static String getScoreDifferent(int score1, int score2) {
-        int tempScore = 0;
-        for (int i = 1; i < THREE; i++) {
-            if (i == 1) {
-                tempScore = score1;
-            } else {
-                result += "-";
-                tempScore = score2;
-            }
-            switch (tempScore) {
-                case ZERO:
-                    result += "Love";
-                    break;
-                case ONE:
-                    result += "Fifteen";
-                    break;
-                case TWO:
-                    result += "Thirty";
-                    break;
-                case THREE:
-                    result += "Forty";
-                    break;
-            }
+    public static String callScoreOne(int score1) {
+        switch (score1) {
+            case ZERO:
+                result = "Love";
+                break;
+            case ONE:
+                result = "Fifteen";
+                break;
+            case TWO:
+                result = "Thirty";
+                break;
+            case THREE:
+                result = "Forty";
+                break;
         }
         return result;
-    }
+    }public static String callScoreTwo(int score2){
+            switch (score2) {
+                case ZERO:
+                    result = "Love";
+                    break;
+                case ONE:
+                    result = "Fifteen";
+                    break;
+                case TWO:
+                    result = "Thirty";
+                    break;
+                case THREE:
+                    result = "Forty";
+                    break;
+            }
+        return result;
+        }
+
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -91,7 +100,7 @@ public class Refactoring {
             System.out.println(getScoreMoreFour(nameOfFirstPlayer, nameOfSecondPlayer, scoreOne, scoreSecond));
 
         } else {
-            System.out.println(getScoreDifferent(scoreOne, scoreSecond));
+            System.out.println(callScoreOne(scoreOne) + " " +callScoreTwo(scoreSecond));
         }
     }
 }
