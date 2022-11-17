@@ -2,7 +2,7 @@ package ss4.bai_tap;
 
 import java.util.Scanner;
 
-public class StringInclude {
+ public class StringInclude {
     public static void main(String[] args) {
         String  inputString;
         char charter;

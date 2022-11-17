@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Sum {
-    public static int mySum(int a,int column,int[][]arr) {
+    public static int mySum(int a, int column, double[][] arr) {
         int sum=0;
         for (int i = 0; i < column; i++) {
             sum += arr[i][a];
@@ -14,20 +14,17 @@ public class Sum {
     public static void main(String[] args) {
         int column,row,index;
 
-
-
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter column");
         column=Integer.parseInt(scanner.nextLine());
         System.out.println("enter row");
         row=Integer.parseInt(scanner.nextLine());
-         int[][]array=new int[column][row];
+         double[][]array=new double[column][row];
 
         for (int i = 0; i < column; i++) {
             for (int j = 0; j < row; j++) {
                 System.out.println("enter number array" +i);
-                array[i][j]=Integer.parseInt(scanner.nextLine());
+                array[i][j]=Float.parseFloat(scanner.nextLine());
 
             }
 
