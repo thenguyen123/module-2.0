@@ -39,7 +39,7 @@ public class LinkedListMain {
                     listOfProducts1.findName(arrayList);
                     break;
                 case 6:
-                    Collections.sort(arrayList, new ListOfProducts());
+                    Collections.sort(arrayList, new ComparatorMain());
                     System.out.println(arrayList);
             }
         } while (choose < 7);

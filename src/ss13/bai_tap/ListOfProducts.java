@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
-public class ListOfProducts implements Comparator<ListOfProducts> {
+public class ListOfProducts {
     private int id;
     private String name;
     private float prices;
@@ -117,16 +117,16 @@ public class ListOfProducts implements Comparator<ListOfProducts> {
 
     }
 
-    @Override
-    public int compare(ListOfProducts o1, ListOfProducts o2) {
-        if (o1.getPrices() - o2.getPrices() > 0) {
-            return 1;
-        } else if (o1.getPrices() - o2.getPrices() == 0) {
-            return 0;
-
-        } else {
-            return -1;
-        }
-    }
+//    @Override
+//    public int compare(ListOfProducts o1, ListOfProducts o2) {
+//        if (o1.getPrices() - o2.getPrices() > 0) {
+//            return 1;
+//        } else if (o1.getPrices() - o2.getPrices() == 0) {
+//            return 0;
+//
+//        } else {
+//            return -1;
+//        }
+//    }
 }
 
