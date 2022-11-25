@@ -1,0 +1,5 @@
+Countries{code='VN', name='Việt Nam ', id=1}
+Countries{code='TQ', name='Trung Quốc ', id=2}
+Countries{code='HQ', name='Hàn Quốc ', id=3}
+Countries{code='E', name='Anh ', id=4}
+Countries{code='USA', name='Mỹ', id=5}
